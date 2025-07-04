@@ -1,6 +1,6 @@
 /* 
 LED VERSION
-GRW WRG wir beim tvr tuscan
+GRW WRG wir beim tvr tuscan mk1
 linkslenkung steuert das linke rad, rechtslenkung das rechte
 */
 // vars
