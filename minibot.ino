@@ -1,6 +1,7 @@
-// LED VERSION
-// GRW WRG wir beim tvr tuscan
-
+/* LED VERSION
+GRW WRG wir beim tvr tuscan
+linkslenkung steuert das linke rad, rechtslenkung das rechte
+*/
 // vars
 int linkslenkung = 9;  // ist da drauf wegen pwm
 int rechtslenkung = 10;
@@ -80,7 +81,7 @@ void loop() {
       // bremslicht an
       digitalWrite(rot, HIGH);
 
-      // weisses licht
+      // weisses licht an
       digitalWrite(weiss, HIGH);
 
       // hinten
