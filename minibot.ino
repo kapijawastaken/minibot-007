@@ -1,8 +1,6 @@
-/* 
-LED VERSION
-GRW WRG wir beim tvr tuscan mk1
-linkslenkung steuert das linke rad, rechtslenkung das rechte
-*/
+// LED VERSION
+// GRW WRG wir beim tvr tuscan
+
 // vars
 int linkslenkung = 9;  // ist da drauf wegen pwm
 int rechtslenkung = 10;
@@ -77,12 +75,12 @@ void loop() {
 
       // lenkung links
       analogWrite(rechtslenkung, 255);
-      delay(125);
+      delay(500);
     } else {
       // bremslicht an
       digitalWrite(rot, HIGH);
 
-      // weisses licht an
+      // weisses licht
       digitalWrite(weiss, HIGH);
 
       // hinten
@@ -90,7 +88,7 @@ void loop() {
       analogWrite(rechtslenkung, 0);
       analogWrite(hintenrechts, 255);
       analogWrite(hintenlinks, 225);
-      delay(3000);
+      delay(1500);
       analogWrite(hintenrechts, 0);
       analogWrite(hintenlinks, 0);
 
@@ -115,7 +113,7 @@ void loop() {
 
       // lenkung rechts
       analogWrite(linkslenkung, 225);
-      delay(125);
+      delay(500);
     }
   } else {
     analogWrite(linkslenkung, 225);   // links ist niedriger als
